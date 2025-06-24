@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BrewBold Coffee</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    header {
+      background: #3e2723;
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    .logo {
+      font-size: 24px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1511920170033-f8396924c348?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin: 10px 0 20px;
+    }
+
+    .btn {
+      background: #ff9800;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #e68900;
+    }
+
+    .menu {
+      background: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .menu h2 {
+      margin-bottom: 40px;
+      font-size: 30px;
+    }
+
+    .menu-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .menu .item {
+      background: #f0eae2;
+      padding: 20px;
+      border-radius: 8px;
+      width: 250px;
+    }
+
+    .contact {
+      padding: 60px 20px;
+      background: #f7f3f0;
+      text-align: center;
+    }
+
+    .contact h2 {
+      margin-bottom: 30px;
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background: #3e2723;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #5d4037;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #3e2723;
+      color: white;
+      font-size: 14px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .menu-items {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">BrewBold ☕</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Your Morning Starts Here</h2>
+      <p>Freshly brewed coffee, served with love.</p>
+      <a href="#" class="btn">See Our Menu</a>
+    </div>
+  </section>
+
+  <section class="menu">
+    <div class="container">
+      <h2>Our Favorites</h2>
+      <div class="menu-items">
+        <div class="item">
+          <h3>Espresso</h3>
+          <p>Strong & bold. Perfect start to your day.</p>
+        </div>
+        <div class="item">
+          <h3>Cappuccino</h3>
+          <p>Espresso with steamed milk & foam.</p>
+        </div>
+        <div class="item">
+          <h3>Mocha</h3>
+          <p>A chocolatey twist to your classic brew.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 BrewBold Coffee. All rights reserved.</p>
+  </footer>
+</body>
+</html>
